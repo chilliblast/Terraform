@@ -15,6 +15,10 @@ variable "db_remote_state_key" {
   description = "The path for the database's remote state in S3"
 }
 
+variable "enable_autoscaling" {
+  description = "If set to true, enable auto scaling"
+}
+
 variable "instance_type" {
   description = "The type of EC2 instances to run (e.g. t2.micro)"
 }
