@@ -30,3 +30,7 @@ variable "min_size" {
 variable "max_size" {
   description = "The maximum number of EC2 instances in the ASG"
 }
+
+variable "enable_new_user_data" {
+  description = "If set to true, use the new User Data script"
+}
