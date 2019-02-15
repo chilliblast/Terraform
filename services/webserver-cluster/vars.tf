@@ -31,6 +31,16 @@ variable "max_size" {
   description = "The maximum number of EC2 instances in the ASG"
 }
 
-variable "enable_new_user_data" {
-  description = "If set to true, use the new User Data script"
+#variable "enable_new_user_data" {
+#  description = "If set to true, use the new User Data script"
+#}
+
+variable "ami" {
+  description = "The AMI to run in the cluster"
+  default     = "ami-09f0b8b3e41191524"
+}
+
+variable "server_text" {
+  description = "The text the web server should return"
+  default     = "Hello, World"
 }
